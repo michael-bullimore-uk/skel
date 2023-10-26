@@ -8,7 +8,7 @@ An opinionated starting point (skeleton) for (my) PHP packages.
 - Pest testing
 
 ## Installation
-- `composer require mibu/skel:dev-develop`
+Please click the "Use this template" button above.
 
 ## Documentation
 //
