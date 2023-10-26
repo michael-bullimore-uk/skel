@@ -1,0 +1,41 @@
+{
+    "name": "mibu/skel",
+    "description": "",
+    "license": "MIT",
+    "keywords": [],
+    "authors": [
+        {
+            "name": "Michael Bullimore",
+            "homepage": "https://github.com/michael-bullimore-uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Foo\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "require" : {
+        "php" : "^8.2"
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse -c phpstan.neon.dist",
+        "cs": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --using-cache=no --allow-risky=yes",
+        "tests": "vendor/bin/pest --colors --order-by=random"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.35",
+        "pestphp/pest": "^2.24",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-strict-rules": "^1.5"
+    }
+}
